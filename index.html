@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>منيو كافيه حبة قهوة</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+     
+  body {
+    background-color: #fdf6f0;
+    color: #333;
+  }
+  header {
+    background-color: #6f4e37;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .logo-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+    animation: bounceIn 1.2s ease;
+  }
+  .header-title {
+    font-size: 34px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+   .simple-item {
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.simple-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.simple-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 8px;
+}
+
+.simple-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.simple-item h4 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.simple-item:hover h4 {
+  color: #6f4e37;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.menu-title {
+  font-size: 28px;
+  color: #6f4e37;
+  margin-bottom: 20px;
+}
+
+.menu-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.order-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #25d366; /* لون واتساب */
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: #9b9165; /* لون أغمق عند الضغط أو التمرير */
+  transform: scale(1.05);
+}
+
+.gallery-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 30px;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.gallery-container img {
+  flex: 0 0 auto;
+  width: 320px;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background-color: #6f4e37;
+  color: white;
+  border: none;
+  font-size: 28px;
+  padding: 5px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-btn.left {
+  left: 5px;
+}
+
+.scroll-btn.right {
+  right: 5px;
+}
+
+
+
+
+
+</style>
+    
+
+<header>
+  <img src="https://cdn-icons-png.flaticon.com/512/924/924514.png" alt="لوجو كافيه حبة قهوة" class="logo-img">
+  <div class="header-title">☕ كافيه حبة قهوة</div>
+</header>
+
+<!-- ☕ المشروبات -->
+<section class="menu-section">
+  <h2 class="menu-title">☕ قسم المشروبات</h2>
+  <div class="menu-container">
+
+    <div class="simple-item">
+      <img src="https://cdn.pixabay.com/photo/2016/11/18/15/57/coffee-1839169_1280.jpg" alt="اسبريسو سنجل">
+      <h4>اسبريسو سنجل</h4>
+      <p>45 جنيه</p>
+      <a href="#" class="order-btn">اطلب <i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <div class="simple-item">
+      <img src="https://cdn.pixabay.com/photo/2017/12/10/14/47/coffee-3017202_1280.jpg" alt="لاتيه">
+      <h4>لاتيه</h4>
+      <p>50 جنيه</p>
+      <a href="#" class="order-btn">اطلب <i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <div class="simple-item">
+      <img src="https://cdn.pixabay.com/photo/2017/05/31/08/55/coffee-2358380_1280.jpg" alt="كابتشينو">
+      <h4>كابتشينو</h4>
+      <p>55 جنيه</p>
+      <a href="#" class="order-btn">اطلب <i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <div class="simple-item">
+      <img src="https://cdn.pixabay.com/photo/2017/08/07/08/44/coffee-2608864_1280.jpg" alt="قهوة تركي">
+      <h4>قهوة تركي</h4>
+      <p>25 جنيه</p>
+      <a href="#" class="order-btn">اطلب <i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <div class="simple-item">
+      <img src="https://cdn.pixabay.com/photo/2016/01/30/12/49/tea-1161336_1280.jpg" alt="شاي">
+      <h4>شاي</h4>
+      <p>15 جنيه</p>
+      <a href="#" class="order-btn">اطلب <i class="bi bi-whatsapp"></i></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🍰 الحلويات -->
+<section class="menu-section">
+  <h2 class="menu-title">🍰 قسم الحلويات</h2>
+  <div class="menu-container">
+
+    <div class="simple-item">
+      <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/cake-2290258_1280.jpg" alt="تشيز كيك">
+      <h4>تشيز كيك</h4>
+      <p>45 جنيه</p>
+      <a href="#" class="order-btn">اطلب <i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <div class="simple-item">
+      <img src="https://cdn.pixabay.com/photo/2017/01/20/15/06/muffin-1999590_1280.jpg" alt="مافن شوكولاتة">
+      <h4>مافن شوكولاتة</h4>
+      <p>35 جنيه</p>
+      <a href="#" class="order-btn">اطلب <i class="bi bi-whatsapp"></i></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🥐 المخبوزات -->
+<section class="menu-section">
+  <h2 class="menu-title">🥐 قسم المخبوزات</h2>
+  <div class="menu-container">
+
+    <div class="simple-item">
+      <img src="https://cdn.pixabay.com/photo/2016/10/27/22/52/croissant-1776642_1280.jpg" alt="كرواسون">
+      <h4>كرواسون</h4>
+      <p>20 جنيه</p>
+      <a href="#" class="order-btn">اطلب <i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <div class="simple-item">
+      <img src="https://cdn.pixabay.com/photo/2014/10/19/18/19/bread-494687_1280.jpg" alt="توست محمص">
+      <h4>توست محمص</h4>
+      <p>15 جنيه</p>
+      <a href="#" class="order-btn">اطلب <i class="bi bi-whatsapp"></i></a>
+    </div>
+
+  </div>
+</section>
+
+<section class="menu-section">
+  <h2 class="menu-title">📝 اطلب دلوقتي</h2>
+  <form id="orderForm" style="max-width: 800px; margin: auto; text-align: right; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <label for="item" style="display: block; margin-bottom: 6px;">اسم الطلب:</label>
+    <input type="text" id="item" name="item" placeholder="مثلاً: شاي" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;">
+
+    <label for="quantity" style="display: block; margin-bottom: 6px;">الكمية:</label>
+    <input type="number" id="quantity" name="quantity" placeholder="مثلاً: 2" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;">
+
+    <label for="notes" style="display: block; margin-bottom: 6px;">ملاحظات:</label>
+    <textarea id="notes" name="notes" rows="3" placeholder="مثلاً: بدون سكر، زيادة لبن..." style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;"></textarea>
+
+
+    <button type="submit" style="background-color: #26c761; color: white; border: none; padding: 10px 20px; border-radius: 20px; font-size: 16px; cursor: pointer; width: 50%; display: block; margin: 20px auto 0;">
+
+      إرسال عبر واتساب
+    </button>
+  </form>
+</section>
+<section class="menu-section">
+  <h2 class="menu-title">📸 معرض صور الكافيه</h2>
+  <div class="gallery-wrapper">
+    <button class="scroll-btn left" onclick="scrollGallery(-1)">❮</button>
+    
+    <div class="gallery-container" id="gallery">
+      <img src="caffee11111.jpg" alt="صورة 1">
+      <img src="caffee33.jpg" alt="صورة 2">
+      <img src="caffee55.jpg" alt="صورة 3">
+      <img src="f4e00543-73e9-44a9-a3d9-85517f0cbaec.jpg" alt="صورة 4">
+      <!-- تقدري تزودي صور براحتك -->
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollGallery(1)">❯</button>
+  </div>
+</section>
+
+
+<footer style="background-color: #6f4e37;; color: #fff; padding: 30px 20px; text-align: center; font-size: 15px;">
+  <img src="https://cdn-icons-png.flaticon.com/512/924/924514.png" alt="لوجو الكافيه" style="width: 100px; margin-bottom: 15px;">
+  <p>📍 العنوان: بجوار بنك مصر، ملوي - المنيا</p>
+  <p>⏰ ساعات العمل: يوميًا من ٨ صباحًا حتى ١٢ منتصف الليل</p>
+  <p>
+    <a href="https://www.facebook.com" target="_blank" style="color: #fff; margin: 0 10px;"><i class="fa fa-facebook"></i> فيسبوك</a>
+    |
+    <a href="https://wa.me/201206723676" target="_blank" style="color: #fff; margin: 0 10px;"><i class="fa fa-whatsapp"></i> واتساب</a>
+  </p>
+  <div style="margin-top: 20px;">
+    <iframe src="https://maps.google.com/maps?q=بنك%20مصر%20ملوي%20المنيا&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0; border-radius: 8px;"></iframe>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const orderButtons = document.querySelectorAll('.order-btn');
+  orderButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const card = btn.closest('.simple-item');
+      const itemName = card.querySelector('h4').textContent;
+      const message = encodeURIComponent(`أنا عايز أطلب ${itemName} لو سمحت 😊`);
+      const whatsappUrl = `https://wa.me/201206723676?text=${message}`;
+
+      // غير لون الزر بعد الضغط
+      btn.style.backgroundColor = '#444'; // رمادي غامق
+      btn.textContent = 'جاري الإرسال...';
+
+      // افتح واتساب
+      window.open(whatsappUrl, '_blank');
+
+      // يرجع شكله الطبيعي بعد ثانيتين (اختياري)
+      setTimeout(() => {
+        btn.style.backgroundColor = '#25d366';
+        btn.innerHTML = 'اطلب <i class="bi bi-whatsapp"></i>';
+      }, 2000);
+    });
+  });
+});
+</script>
+
+<script>
+  document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const item = document.getElementById('item').value;
+    const quantity = document.getElementById('quantity').value;
+    const notes = document.getElementById('notes').value;
+    let message = `عايز اطلب ${quantity} ${item}`;
+    if (notes.trim() !== '') {
+      message += `\nملاحظات: ${notes}`;
+    }
+    message += " 😊";
+    const whatsappUrl = `https://wa.me/201206723676?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  });
+</script>
+
+<script>
+  function scrollGallery(direction) {
+    const gallery = document.getElementById('gallery');
+    const scrollAmount = 350; // مقدار التحريك يمين أو شمال
+    gallery.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
